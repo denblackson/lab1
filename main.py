@@ -63,6 +63,7 @@ files = ["Numbers_1000.txt", "Numbers_10000.txt", "Numbers_100000.txt"]
 
 for file in files:
     numbers_from_file = read_numbers_from_file(file)
+    print(f"Кількість змінних для обрахунку НСД: {len(numbers_from_file)}")
     start_time = time.perf_counter()
     result = find_gcd(*numbers_from_file)
     end_time = time.perf_counter()
